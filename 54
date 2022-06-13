@@ -1,0 +1,1225 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+local Rep = game:GetService("ReplicatedStorage")
+
+local DumpsterHakccac = Instance.new("ScreenGui")
+local Welcomer = Instance.new("TextLabel")
+local Modules = Instance.new("Frame")
+local InstantHeal = Instance.new("TextButton")
+local InstantHealKb = Instance.new("TextBox")
+local AutoChestTrap = Instance.new("TextButton")
+local AutoChestTrapKb = Instance.new("TextBox")
+local Title = Instance.new("TextLabel")
+local Speed = Instance.new("TextButton")
+local SpeedKb = Instance.new("TextBox")
+local Jetpack = Instance.new("TextButton")
+local JetpackKb = Instance.new("TextBox")
+local Anchor = Instance.new("TextButton")
+local AnchorKb = Instance.new("TextBox")
+local AutoHeal = Instance.new("TextButton")
+local AutoHealInput = Instance.new("TextBox")
+local KeyHeal = Instance.new("TextButton")
+local KeyHealKb = Instance.new("TextBox")
+local InstantHealInput = Instance.new("TextBox")
+local KeyHealInput = Instance.new("TextBox")
+local Modules2 = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local InstantBase = Instance.new("TextButton")
+local QuadStructure = Instance.new("TextButton")
+local InstantArena = Instance.new("TextButton")
+local QuadStructureInput = Instance.new("TextBox")
+local ShowFps = Instance.new("TextButton")
+local Sit = Instance.new("TextButton")
+local AutoPenis = Instance.new("TextButton")
+local PenisInput = Instance.new("TextBox")
+local FPS = Instance.new("TextLabel")
+local Modules3 = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local AutoBlue = Instance.new("TextButton")
+local AutoBlood = Instance.new("TextButton")
+local AutoApples = Instance.new("TextButton")
+local AutoBerry = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Whitelister = Instance.new("Frame")
+local Counter = Instance.new("TextLabel")
+local Logo = Instance.new("TextLabel")
+local Logo_2 = Instance.new("TextLabel")
+local Title_4 = Instance.new("TextLabel")
+
+--Properties:
+
+DumpsterHakccac.Name = "DumpsterHakccac"
+DumpsterHakccac.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DumpsterHakccac.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Welcomer.Name = "Welcomer"
+Welcomer.Parent = DumpsterHakccac
+Welcomer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcomer.BackgroundTransparency = 1.000
+Welcomer.Position = UDim2.new(0.327257663, 0, 0, 0)
+Welcomer.Size = UDim2.new(0, 481, 0, 48)
+Welcomer.Font = Enum.Font.Code
+Welcomer.Text = "Welcome to DumpsterHakccac"
+Welcomer.TextColor3 = Color3.fromRGB(0, 0, 0)
+Welcomer.TextScaled = true
+Welcomer.TextSize = 14.000
+Welcomer.TextWrapped = true
+Welcomer.TextXAlignment = Enum.TextXAlignment.Left
+
+Modules.Name = "Modules"
+Modules.Parent = DumpsterHakccac
+Modules.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Modules.BackgroundTransparency = 0.500
+Modules.BorderSizePixel = 0
+Modules.Position = UDim2.new(0.179821, 0, 0.119769126, 0)
+Modules.Size = UDim2.new(0, 298, 0, 474)
+Modules.Visible = false
+
+InstantHeal.Name = "InstantHeal"
+InstantHeal.Parent = Modules
+InstantHeal.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+InstantHeal.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InstantHeal.BorderSizePixel = 3
+InstantHeal.Position = UDim2.new(0.0771812052, 0, 0.145569623, 0)
+InstantHeal.Size = UDim2.new(0, 130, 0, 50)
+InstantHeal.Font = Enum.Font.Code
+InstantHeal.Text = "Instant Heal"
+InstantHeal.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantHeal.TextScaled = true
+InstantHeal.TextSize = 14.000
+InstantHeal.TextWrapped = true
+
+InstantHealKb.Name = "InstantHealKb"
+InstantHealKb.Parent = Modules
+InstantHealKb.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+InstantHealKb.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InstantHealKb.BorderSizePixel = 3
+InstantHealKb.Position = UDim2.new(0.513422847, 0, 0.145569623, 0)
+InstantHealKb.Size = UDim2.new(0, 55, 0, 50)
+InstantHealKb.Font = Enum.Font.Code
+InstantHealKb.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+InstantHealKb.PlaceholderText = "Keybind"
+InstantHealKb.Text = ""
+InstantHealKb.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantHealKb.TextScaled = true
+InstantHealKb.TextSize = 14.000
+InstantHealKb.TextWrapped = true
+
+AutoChestTrap.Name = "AutoChestTrap"
+AutoChestTrap.Parent = Modules
+AutoChestTrap.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoChestTrap.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoChestTrap.BorderSizePixel = 3
+AutoChestTrap.Position = UDim2.new(0.0771812052, 0, 0.251054853, 0)
+AutoChestTrap.Size = UDim2.new(0, 130, 0, 50)
+AutoChestTrap.Font = Enum.Font.Code
+AutoChestTrap.Text = "AutoChestTrap"
+AutoChestTrap.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoChestTrap.TextScaled = true
+AutoChestTrap.TextSize = 14.000
+AutoChestTrap.TextWrapped = true
+
+AutoChestTrapKb.Name = "AutoChestTrapKb"
+AutoChestTrapKb.Parent = Modules
+AutoChestTrapKb.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoChestTrapKb.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoChestTrapKb.BorderSizePixel = 3
+AutoChestTrapKb.Position = UDim2.new(0.513422787, 0, 0.251054853, 0)
+AutoChestTrapKb.Size = UDim2.new(0, 122, 0, 50)
+AutoChestTrapKb.Font = Enum.Font.Code
+AutoChestTrapKb.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+AutoChestTrapKb.PlaceholderText = "Keybind"
+AutoChestTrapKb.Text = ""
+AutoChestTrapKb.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoChestTrapKb.TextScaled = true
+AutoChestTrapKb.TextSize = 14.000
+AutoChestTrapKb.TextWrapped = true
+
+Title.Name = "Title"
+Title.Parent = Modules
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0268456377, 0, 0, 0)
+Title.Size = UDim2.new(0, 200, 0, 50)
+Title.Font = Enum.Font.Code
+Title.Text = "Modules"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Speed.Name = "Speed"
+Speed.Parent = Modules
+Speed.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+Speed.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BorderSizePixel = 3
+Speed.Position = UDim2.new(0.0771812052, 0, 0.356540084, 0)
+Speed.Size = UDim2.new(0, 130, 0, 50)
+Speed.Font = Enum.Font.Code
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+SpeedKb.Name = "SpeedKb"
+SpeedKb.Parent = Modules
+SpeedKb.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+SpeedKb.BorderColor3 = Color3.fromRGB(255, 255, 255)
+SpeedKb.BorderSizePixel = 3
+SpeedKb.Position = UDim2.new(0.513422787, 0, 0.356540084, 0)
+SpeedKb.Size = UDim2.new(0, 122, 0, 50)
+SpeedKb.Font = Enum.Font.Code
+SpeedKb.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+SpeedKb.PlaceholderText = "Keybind"
+SpeedKb.Text = ""
+SpeedKb.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedKb.TextScaled = true
+SpeedKb.TextSize = 14.000
+SpeedKb.TextWrapped = true
+
+Jetpack.Name = "Jetpack"
+Jetpack.Parent = Modules
+Jetpack.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+Jetpack.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Jetpack.BorderSizePixel = 3
+Jetpack.Position = UDim2.new(0.0771812052, 0, 0.462025315, 0)
+Jetpack.Size = UDim2.new(0, 130, 0, 50)
+Jetpack.Font = Enum.Font.Code
+Jetpack.Text = "Jetpack"
+Jetpack.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jetpack.TextScaled = true
+Jetpack.TextSize = 14.000
+Jetpack.TextWrapped = true
+
+JetpackKb.Name = "JetpackKb"
+JetpackKb.Parent = Modules
+JetpackKb.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+JetpackKb.BorderColor3 = Color3.fromRGB(255, 255, 255)
+JetpackKb.BorderSizePixel = 3
+JetpackKb.Position = UDim2.new(0.513422787, 0, 0.462025315, 0)
+JetpackKb.Size = UDim2.new(0, 122, 0, 50)
+JetpackKb.Font = Enum.Font.Code
+JetpackKb.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+JetpackKb.PlaceholderText = "Keybind"
+JetpackKb.Text = ""
+JetpackKb.TextColor3 = Color3.fromRGB(255, 255, 255)
+JetpackKb.TextScaled = true
+JetpackKb.TextSize = 14.000
+JetpackKb.TextWrapped = true
+
+Anchor.Name = "Anchor"
+Anchor.Parent = Modules
+Anchor.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+Anchor.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Anchor.BorderSizePixel = 3
+Anchor.Position = UDim2.new(0.0771812052, 0, 0.567510545, 0)
+Anchor.Size = UDim2.new(0, 130, 0, 50)
+Anchor.Font = Enum.Font.Code
+Anchor.Text = "Anchor"
+Anchor.TextColor3 = Color3.fromRGB(255, 255, 255)
+Anchor.TextScaled = true
+Anchor.TextSize = 14.000
+Anchor.TextWrapped = true
+
+AnchorKb.Name = "AnchorKb"
+AnchorKb.Parent = Modules
+AnchorKb.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AnchorKb.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AnchorKb.BorderSizePixel = 3
+AnchorKb.Position = UDim2.new(0.513422787, 0, 0.567510545, 0)
+AnchorKb.Size = UDim2.new(0, 122, 0, 50)
+AnchorKb.Font = Enum.Font.Code
+AnchorKb.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+AnchorKb.PlaceholderText = "Keybind"
+AnchorKb.Text = ""
+AnchorKb.TextColor3 = Color3.fromRGB(255, 255, 255)
+AnchorKb.TextScaled = true
+AnchorKb.TextSize = 14.000
+AnchorKb.TextWrapped = true
+
+AutoHeal.Name = "AutoHeal"
+AutoHeal.Parent = Modules
+AutoHeal.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoHeal.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoHeal.BorderSizePixel = 3
+AutoHeal.Position = UDim2.new(0.0771812052, 0, 0.672995806, 0)
+AutoHeal.Size = UDim2.new(0, 130, 0, 50)
+AutoHeal.Font = Enum.Font.Code
+AutoHeal.Text = "AutoHeal [Toggle]"
+AutoHeal.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoHeal.TextScaled = true
+AutoHeal.TextSize = 14.000
+AutoHeal.TextWrapped = true
+
+AutoHealInput.Name = "AutoHealInput"
+AutoHealInput.Parent = Modules
+AutoHealInput.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoHealInput.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoHealInput.BorderSizePixel = 3
+AutoHealInput.Position = UDim2.new(0.513422787, 0, 0.672995806, 0)
+AutoHealInput.Size = UDim2.new(0, 122, 0, 50)
+AutoHealInput.Font = Enum.Font.Code
+AutoHealInput.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+AutoHealInput.PlaceholderText = "Food"
+AutoHealInput.Text = ""
+AutoHealInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoHealInput.TextScaled = true
+AutoHealInput.TextSize = 14.000
+AutoHealInput.TextWrapped = true
+
+KeyHeal.Name = "KeyHeal"
+KeyHeal.Parent = Modules
+KeyHeal.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+KeyHeal.BorderColor3 = Color3.fromRGB(255, 255, 255)
+KeyHeal.BorderSizePixel = 3
+KeyHeal.Position = UDim2.new(0.0771812052, 0, 0.778481007, 0)
+KeyHeal.Size = UDim2.new(0, 130, 0, 50)
+KeyHeal.Font = Enum.Font.Code
+KeyHeal.Text = "KeyHeal"
+KeyHeal.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyHeal.TextScaled = true
+KeyHeal.TextSize = 14.000
+KeyHeal.TextWrapped = true
+
+KeyHealKb.Name = "KeyHealKb"
+KeyHealKb.Parent = Modules
+KeyHealKb.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+KeyHealKb.BorderColor3 = Color3.fromRGB(255, 255, 255)
+KeyHealKb.BorderSizePixel = 3
+KeyHealKb.Position = UDim2.new(0.513422847, 0, 0.778481007, 0)
+KeyHealKb.Size = UDim2.new(0, 55, 0, 50)
+KeyHealKb.Font = Enum.Font.Code
+KeyHealKb.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+KeyHealKb.PlaceholderText = "Keybind"
+KeyHealKb.Text = ""
+KeyHealKb.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyHealKb.TextScaled = true
+KeyHealKb.TextSize = 14.000
+KeyHealKb.TextWrapped = true
+
+InstantHealInput.Name = "InstantHealInput"
+InstantHealInput.Parent = Modules
+InstantHealInput.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+InstantHealInput.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InstantHealInput.BorderSizePixel = 3
+InstantHealInput.Position = UDim2.new(0.697986603, 0, 0.145569623, 0)
+InstantHealInput.Size = UDim2.new(0, 67, 0, 44)
+InstantHealInput.Font = Enum.Font.Code
+InstantHealInput.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+InstantHealInput.PlaceholderText = "Food"
+InstantHealInput.Text = ""
+InstantHealInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantHealInput.TextScaled = true
+InstantHealInput.TextSize = 14.000
+InstantHealInput.TextWrapped = true
+
+KeyHealInput.Name = "KeyHealInput"
+KeyHealInput.Parent = Modules
+KeyHealInput.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+KeyHealInput.BorderColor3 = Color3.fromRGB(255, 255, 255)
+KeyHealInput.BorderSizePixel = 3
+KeyHealInput.Position = UDim2.new(0.718120813, 0, 0.778481007, 0)
+KeyHealInput.Size = UDim2.new(0, 61, 0, 50)
+KeyHealInput.Font = Enum.Font.Code
+KeyHealInput.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+KeyHealInput.PlaceholderText = "Food"
+KeyHealInput.Text = ""
+KeyHealInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyHealInput.TextScaled = true
+KeyHealInput.TextSize = 14.000
+KeyHealInput.TextWrapped = true
+
+Modules2.Name = "Modules2"
+Modules2.Parent = DumpsterHakccac
+Modules2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Modules2.BackgroundTransparency = 0.500
+Modules2.BorderSizePixel = 0
+Modules2.Position = UDim2.new(0.437754273, 0, 0.119769126, 0)
+Modules2.Size = UDim2.new(0, 298, 0, 474)
+Modules2.Visible = false
+
+Title_2.Name = "Title"
+Title_2.Parent = Modules2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.0268456377, 0, 0, 0)
+Title_2.Size = UDim2.new(0, 200, 0, 50)
+Title_2.Font = Enum.Font.Code
+Title_2.Text = "Other Modules"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+InstantBase.Name = "InstantBase"
+InstantBase.Parent = Modules2
+InstantBase.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+InstantBase.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InstantBase.BorderSizePixel = 3
+InstantBase.Position = UDim2.new(0.0637583882, 0, 0.145569623, 0)
+InstantBase.Size = UDim2.new(0, 130, 0, 50)
+InstantBase.Font = Enum.Font.Code
+InstantBase.Text = "Instant Base"
+InstantBase.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantBase.TextScaled = true
+InstantBase.TextSize = 14.000
+InstantBase.TextWrapped = true
+
+QuadStructure.Name = "QuadStructure"
+QuadStructure.Parent = Modules2
+QuadStructure.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+QuadStructure.BorderColor3 = Color3.fromRGB(255, 255, 255)
+QuadStructure.BorderSizePixel = 3
+QuadStructure.Position = UDim2.new(0.0637583882, 0, 0.263713092, 0)
+QuadStructure.Size = UDim2.new(0, 126, 0, 50)
+QuadStructure.Font = Enum.Font.Code
+QuadStructure.Text = "Quad Row Structure"
+QuadStructure.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuadStructure.TextScaled = true
+QuadStructure.TextSize = 14.000
+QuadStructure.TextWrapped = true
+
+InstantArena.Name = "InstantArena"
+InstantArena.Parent = Modules2
+InstantArena.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+InstantArena.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InstantArena.BorderSizePixel = 3
+InstantArena.Position = UDim2.new(0.486577153, 0, 0.145569623, 0)
+InstantArena.Size = UDim2.new(0, 130, 0, 50)
+InstantArena.Font = Enum.Font.Code
+InstantArena.Text = "Instant Arena"
+InstantArena.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantArena.TextScaled = true
+InstantArena.TextSize = 14.000
+InstantArena.TextWrapped = true
+
+QuadStructureInput.Name = "QuadStructureInput"
+QuadStructureInput.Parent = Modules2
+QuadStructureInput.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+QuadStructureInput.BorderColor3 = Color3.fromRGB(255, 255, 255)
+QuadStructureInput.BorderSizePixel = 3
+QuadStructureInput.Position = UDim2.new(0.486577183, 0, 0.263713092, 0)
+QuadStructureInput.Size = UDim2.new(0, 130, 0, 50)
+QuadStructureInput.Font = Enum.Font.Code
+QuadStructureInput.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+QuadStructureInput.PlaceholderText = "Structure"
+QuadStructureInput.Text = ""
+QuadStructureInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+QuadStructureInput.TextScaled = true
+QuadStructureInput.TextSize = 14.000
+QuadStructureInput.TextWrapped = true
+
+ShowFps.Name = "ShowFps"
+ShowFps.Parent = Modules2
+ShowFps.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+ShowFps.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ShowFps.BorderSizePixel = 3
+ShowFps.Position = UDim2.new(0.0637583882, 0, 0.381856561, 0)
+ShowFps.Size = UDim2.new(0, 126, 0, 50)
+ShowFps.Font = Enum.Font.Code
+ShowFps.Text = "Show Fps [Toggle]"
+ShowFps.TextColor3 = Color3.fromRGB(255, 255, 255)
+ShowFps.TextScaled = true
+ShowFps.TextSize = 14.000
+ShowFps.TextWrapped = true
+
+Sit.Name = "Sit"
+Sit.Parent = Modules2
+Sit.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+Sit.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Sit.BorderSizePixel = 3
+Sit.Position = UDim2.new(0.5, 0, 0.381856561, 0)
+Sit.Size = UDim2.new(0, 126, 0, 50)
+Sit.Font = Enum.Font.Code
+Sit.Text = "Sit"
+Sit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sit.TextScaled = true
+Sit.TextSize = 14.000
+Sit.TextWrapped = true
+
+AutoPenis.Name = "AutoPenis"
+AutoPenis.Parent = Modules2
+AutoPenis.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoPenis.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoPenis.BorderSizePixel = 3
+AutoPenis.Position = UDim2.new(0.0637583733, 0, 0.502109706, 0)
+AutoPenis.Size = UDim2.new(0, 130, 0, 50)
+AutoPenis.Font = Enum.Font.Code
+AutoPenis.Text = "AutoPenis"
+AutoPenis.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoPenis.TextScaled = true
+AutoPenis.TextSize = 14.000
+AutoPenis.TextWrapped = true
+
+PenisInput.Name = "PenisInput"
+PenisInput.Parent = Modules2
+PenisInput.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+PenisInput.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PenisInput.BorderSizePixel = 3
+PenisInput.Position = UDim2.new(0.486577183, 0, 0.502109706, 0)
+PenisInput.Size = UDim2.new(0, 130, 0, 50)
+PenisInput.Font = Enum.Font.Code
+PenisInput.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+PenisInput.PlaceholderText = "Structure"
+PenisInput.Text = ""
+PenisInput.TextColor3 = Color3.fromRGB(255, 255, 255)
+PenisInput.TextScaled = true
+PenisInput.TextSize = 14.000
+PenisInput.TextWrapped = true
+
+FPS.Name = "FPS"
+FPS.Parent = DumpsterHakccac
+FPS.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FPS.BackgroundTransparency = 0.500
+FPS.Position = UDim2.new(0.693246543, 0, 0.119769126, 0)
+FPS.Size = UDim2.new(0, 156, 0, 38)
+FPS.Visible = false
+FPS.Font = Enum.Font.Code
+FPS.Text = "FPS:"
+FPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPS.TextScaled = true
+FPS.TextSize = 14.000
+FPS.TextWrapped = true
+
+Modules3.Name = "Modules3"
+Modules3.Parent = DumpsterHakccac
+Modules3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Modules3.BackgroundTransparency = 0.500
+Modules3.BorderSizePixel = 0
+Modules3.Position = UDim2.new(0.694802403, 0, 0.119769126, 0)
+Modules3.Size = UDim2.new(0, 298, 0, 474)
+Modules3.Visible = false
+
+Title_3.Name = "Title"
+Title_3.Parent = Modules3
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.0268456377, 0, 0, 0)
+Title_3.Size = UDim2.new(0, 200, 0, 50)
+Title_3.Font = Enum.Font.Code
+Title_3.Text = "Farming Modules"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+Title_3.TextXAlignment = Enum.TextXAlignment.Left
+
+AutoBlue.Name = "AutoBlue"
+AutoBlue.Parent = Modules3
+AutoBlue.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoBlue.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoBlue.BorderSizePixel = 3
+AutoBlue.Position = UDim2.new(0.0536912605, 0, 0.145569623, 0)
+AutoBlue.Size = UDim2.new(0, 130, 0, 50)
+AutoBlue.Font = Enum.Font.Code
+AutoBlue.Text = "Auto Farm Bluefruit [OFF]"
+AutoBlue.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBlue.TextScaled = true
+AutoBlue.TextSize = 14.000
+AutoBlue.TextWrapped = true
+
+AutoBlood.Name = "AutoBlood"
+AutoBlood.Parent = Modules3
+AutoBlood.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoBlood.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoBlood.BorderSizePixel = 3
+AutoBlood.Position = UDim2.new(0.489932865, 0, 0.145569623, 0)
+AutoBlood.Size = UDim2.new(0, 130, 0, 50)
+AutoBlood.Font = Enum.Font.Code
+AutoBlood.Text = "Auto Farm Bloodfruit [OFF]"
+AutoBlood.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBlood.TextScaled = true
+AutoBlood.TextSize = 14.000
+AutoBlood.TextWrapped = true
+
+AutoApples.Name = "AutoApples"
+AutoApples.Parent = Modules3
+AutoApples.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoApples.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoApples.BorderSizePixel = 3
+AutoApples.Position = UDim2.new(0.053691268, 0, 0.263713092, 0)
+AutoApples.Size = UDim2.new(0, 130, 0, 50)
+AutoApples.Font = Enum.Font.Code
+AutoApples.Text = "Auto Farm Apples [OFF]"
+AutoApples.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoApples.TextScaled = true
+AutoApples.TextSize = 14.000
+AutoApples.TextWrapped = true
+
+AutoBerry.Name = "AutoBerry"
+AutoBerry.Parent = Modules3
+AutoBerry.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+AutoBerry.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AutoBerry.BorderSizePixel = 3
+AutoBerry.Position = UDim2.new(0.489932865, 0, 0.263713092, 0)
+AutoBerry.Size = UDim2.new(0, 130, 0, 50)
+AutoBerry.Modal = true
+AutoBerry.Font = Enum.Font.Code
+AutoBerry.Text = "Auto Farm Berries [OFF]"
+AutoBerry.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoBerry.TextScaled = true
+AutoBerry.TextSize = 14.000
+AutoBerry.TextWrapped = true
+
+TextLabel.Parent = Modules3
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0536912754, 0, 0.413502097, 0)
+TextLabel.Size = UDim2.new(0, 260, 0, 92)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "Do not turn more than one farmer on or it will bug."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Whitelister.Name = "Whitelister"
+Whitelister.Parent = DumpsterHakccac
+Whitelister.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Whitelister.BorderSizePixel = 0
+Whitelister.Position = UDim2.new(0.373134315, 0, 0.308802307, 0)
+Whitelister.Size = UDim2.new(0, 306, 0, 176)
+
+Counter.Name = "Counter"
+Counter.Parent = Whitelister
+Counter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Counter.BackgroundTransparency = 1.000
+Counter.Position = UDim2.new(0.0923046991, 0, 0.429632902, 0)
+Counter.Size = UDim2.new(0, 249, 0, 75)
+Counter.Font = Enum.Font.Highway
+Counter.Text = "Please wait..."
+Counter.TextColor3 = Color3.fromRGB(65, 65, 65)
+Counter.TextScaled = true
+Counter.TextSize = 14.000
+Counter.TextWrapped = true
+
+Logo.Name = "Logo"
+Logo.Parent = Whitelister
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(-0.248366013, 0, 0.0625, 0)
+Logo.Size = UDim2.new(0, 200, 0, 50)
+Logo.Font = Enum.Font.Highway
+Logo.Text = "O"
+Logo.TextColor3 = Color3.fromRGB(255, 255, 255)
+Logo.TextScaled = true
+Logo.TextSize = 14.000
+Logo.TextWrapped = true
+
+Logo_2.Name = "Logo"
+Logo_2.Parent = Whitelister
+Logo_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo_2.BackgroundTransparency = 1.000
+Logo_2.Position = UDim2.new(-0.160130724, 0, 0, 0)
+Logo_2.Size = UDim2.new(0, 186, 0, 39)
+Logo_2.Font = Enum.Font.Highway
+Logo_2.Text = "S"
+Logo_2.TextColor3 = Color3.fromRGB(85, 255, 255)
+Logo_2.TextScaled = true
+Logo_2.TextSize = 14.000
+Logo_2.TextWrapped = true
+
+Title_4.Name = "Title"
+Title_4.Parent = Whitelister
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.Position = UDim2.new(0.209951758, 0, 0.0852272809, 0)
+Title_4.Size = UDim2.new(0, 176, 0, 41)
+Title_4.Font = Enum.Font.Highway
+Title_4.Text = "Whitelister"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+Whitelister:Destroy()
+
+Mouse.KeyDown:connect(function(KeyPressed)
+	if KeyPressed == "y" then
+		if Modules.Visible == false and Modules2.Visible == false and Modules3.Visible == false then
+			Modules.Visible = true
+			Modules2.Visible = true
+			Modules3.Visible = true
+		else
+		    Modules.Visible = false
+		    Modules2.Visible = false
+		Modules3.Visible = false
+		end
+	end
+end)
+--[[
+	Functions
+--]]
+
+Modules.Active = true
+Modules.Draggable = true
+
+Modules2.Active = true
+Modules2.Draggable = true
+
+Modules3.Active = true
+Modules3.Draggable = true
+
+FPS.Active = true
+FPS.Draggable = true
+
+Welcomer.Active = true
+Welcomer.Draggable = true
+
+-- Binds
+
+Welcomer.Text = "Welcome to DumpsterHakccac " .. Player.Name .. " :)"
+
+-- Main Functions
+
+InstantHeal.MouseButton1Click:connect(function()
+	Mouse.KeyDown:Connect(function(key)
+		if key == InstantHealKb.Text then
+			local event = Rep.Events.UseBagItem
+			
+			for i=1, 200 do
+				event:FireServer(InstantHealInput.Text)
+			end
+		end
+	end)
+end)
+
+AutoChestTrap.MouseButton1Click:connect(function()
+	Mouse.KeyDown:Connect(function(key)
+		if key == AutoChestTrapKb.Text then
+			
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+local h = game.Players.LocalPlayer.Character.LowerTorso.Position
+local aa = h.x
+local bb = h.y - 10
+local cc = h.z
+
+-- Start
+local k_1 = "Chest"
+local k_2 = CFrame.new(aa, bb, cc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local k_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(k_1, k_2, k_3)
+
+		end
+	end)
+end)
+
+Speed.MouseButton1Click:Connect(function()
+	 local plr = game:GetService("Players").LocalPlayer
+    local char = plr.Character
+    local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+    local hum = char:FindFirstChild("HumanoidRootPart")
+    mouse.KeyDown:connect(function(key)
+        if key == SpeedKb.Text then
+            loop = true
+            while loop do
+                hum.CFrame = hum.CFrame + hum.CFrame.lookVector * 3
+                wait()
+            end
+            end
+            end)
+    end)
+    
+    Mouse.KeyUp:connect(function(key)
+        if key == SpeedKb.Text then
+            loop = false
+        end
+end)
+
+Jetpack.MouseButton1Click:Connect(function()
+		
+down = false
+velocity = Instance.new("BodyVelocity")
+velocity.maxForce = Vector3.new(100000, 0, 100000)
+
+local speed = 150
+gyro = Instance.new("BodyGyro")
+gyro.maxTorque = Vector3.new(100000, 0, 100000)
+
+local hum = game.Players.LocalPlayer.Character.Humanoid
+
+function onButton1Down(mouse)
+down = true
+velocity.Parent = game.Players.LocalPlayer.Character.UpperTorso
+velocity.velocity = (hum.MoveDirection) * speed
+gyro.Parent = game.Players.LocalPlayer.Character.UpperTorso
+while down do
+if not down then break end
+velocity.velocity = (hum.MoveDirection) * speed
+local refpos = gyro.Parent.Position + (gyro.Parent.Position - workspace.CurrentCamera.CoordinateFrame.p).unit * 5
+gyro.cframe = CFrame.new(gyro.Parent.Position, Vector3.new(refpos.x, gyro.Parent.Position.y, refpos.z))
+wait(0.1)
+end
+end
+
+function onButton1Up(mouse)
+velocity.Parent = nil
+gyro.Parent = nil
+down = false
+end
+
+function onSelected(mouse)
+mouse.KeyDown:connect(function(k) if k:lower()==JetpackKb.Text then onButton1Down(mouse)end end)
+mouse.KeyUp:connect(function(k) if k:lower()==JetpackKb.Text then onButton1Up(mouse)end end)
+end
+
+onSelected(game.Players.LocalPlayer:GetMouse())
+end)
+
+Anchor.MouseButton1Click:Connect(function()
+	local fat = Instance.new'Animation'
+fat.AnimationId = 'rbxassetid://218504594'
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+
+Mouse.KeyDown:connect(function(KeyPressed)
+	if KeyPressed == AnchorKb.Text then
+		if game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored == false then
+game:GetService('Players').LocalPlayer.Character:FindFirstChildOfClass'Humanoid':LoadAnimation(fat):Play(0,0,0)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = true
+fat:Destroy()
+		else
+			game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = false
+		end
+	end
+end)
+end)
+
+KeyHeal.MouseButton1Click:Connect(function()
+	local lol = 1
+local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+    if key == KeyHealKb.Text then
+	lol = 0
+	while lol == 0 do
+	wait()
+local Event = game:GetService("ReplicatedStorage").Events.UseBagItem
+    Event:FireServer(KeyHealInput.Text)
+    Event:FireServer(KeyHealInput.Text)
+    Event:FireServer(KeyHealInput.Text)
+end end end)
+local plr = game:GetService("Players").LocalPlayer
+local mouse = plr:GetMouse()
+mouse.KeyUp:connect(function(key)
+    if key == KeyHealKb.Text then
+	lol = 1
+end end)
+end)
+
+InstantBase.MouseButton1Click:Connect(function()
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+local h = game.Players.LocalPlayer.Character.LowerTorso.Position
+local aa = h.x + 13
+local bb = h.y - 2
+local cc = h.z
+local aaa = h.x - 13
+local bbb = h.y - 2
+local ccc = h.z
+local aaaa = h.x
+local bbbb = h.y - 2
+local cccc = h.z + 13
+local aaaaa = h.x
+local bbbbb = h.y - 2
+local ccccc = h.z - 13
+local aaaaaa = h.x + 7
+local bbbbbb = h.y - 2
+local cccccc = h.z + 7
+local aaaaaaa = h.x
+local bbbbbbb = h.y - 2
+local ccccccc = h.z - 7
+local aaaaaaaa = h.x + 2
+local bbbbbbbb = h.y - 2
+local cccccccc = h.z - 7
+local aaaaaaaaa = h.x + 1
+local bbbbbbbbb = h.y - 2
+local ccccccccc = h.z - 7
+local aaaaaaaaaa = h.x
+local bbbbbbbbbb = h.y - 2
+local cccccccccc = h.z + 7
+local aaaaaaaaaaa = h.x - 7
+local bbbbbbbbbbb = h.y - 2
+local ccccccccccc = h.z + 8
+local k_1 = "Wood Wall"
+local k_2 = CFrame.new(aaaa, bbbb, cccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local k_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(k_1, k_2, k_3)
+local l_1 = "Wood Wall"
+local l_2 = CFrame.new(aaaaa, bbbbb, ccccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local l_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(l_1, l_2, l_3)
+local m_1 = "Wood Gate"
+local m_2 = CFrame.new(aaa, bbb, ccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local m_3 = 270
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(m_1, m_2, m_3)
+local n_1 = "Wood Wall"
+local n_2 = CFrame.new(aa, bb, cc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local n_3 = 270
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(n_1, n_2, n_3)
+local o_1 = "Plant Box"
+local o_2 = CFrame.new(aaaaaa, bbbbbb, cccccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local o_3 = 270
+Event:FireServer(o_1, o_2, o_3)
+local p_1 = "Campfire"
+local p_2 = CFrame.new(aaaaaaa, bbbbbbb, ccccccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local p_3 = 270
+Event:FireServer(p_1, p_2, p_3)
+local q_1 = "Campfire"
+local q_2 = CFrame.new(aaaaaaaa, bbbbbbbb, cccccccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local q_3 = 270
+Event:FireServer(q_1, q_2, q_3)
+local r_1 = "Chest"
+local r_2 = CFrame.new(aaaaaaaaa, bbbbbbbbb, ccccccccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local r_3 = 270
+Event:FireServer(r_1, r_2, r_3)
+local s_1 = "Plant Box"
+local s_2 = CFrame.new(aaaaaaaaaa, bbbbbbbbbb, cccccccccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local s_3 = 270
+Event:FireServer(s_1, s_2, s_3)
+local t_1 = "Lookout"
+local t_2 = CFrame.new(aaaaaaaaaaa, bbbbbbbbbbb, ccccccccccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local t_3 = 270
+Event:FireServer(t_1, t_2, t_3)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I just built a cozy home with the power of my mouse!", "All")
+end)
+
+InstantArena.MouseButton1Click:Connect(function()
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+local h = game.Players.LocalPlayer.Character.LowerTorso.Position
+local aa = h.x + 13
+local bb = h.y - 2
+local cc = h.z
+local aaa = h.x - 13
+local bbb = h.y - 2
+local ccc = h.z
+local aaaa = h.x
+local bbbb = h.y - 2
+local cccc = h.z + 13
+local aaaaa = h.x
+local bbbbb = h.y - 2
+local ccccc = h.z - 13
+local k_1 = "Wood Wall"
+local k_2 = CFrame.new(aaaa, bbbb, cccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local k_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(k_1, k_2, k_3)
+local l_1 = "Wood Wall"
+local l_2 = CFrame.new(aaaaa, bbbbb, ccccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local l_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(l_1, l_2, l_3)
+local m_1 = "Wood Gate"
+local m_2 = CFrame.new(aaa, bbb, ccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local m_3 = 270
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(m_1, m_2, m_3)
+local n_1 = "Wood Wall"
+local n_2 = CFrame.new(aa, bb, cc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local n_3 = 270
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(n_1, n_2, n_3)
+end)
+
+QuadStructure.MouseButton1Click:Connect(function()
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+local h = game.Players.LocalPlayer.Character.LowerTorso.Position
+local aa = h.x - 5
+local bb = h.y - 2
+local cc = h.z
+local aaa = h.x - 13
+local bbb = h.y - 2
+local ccc = h.z
+local aaaa = h.x + 10
+local bbbb = h.y - 2
+local cccc = h.z 
+local aaaaa = h.x + 2
+local bbbbb = h.y - 2
+local ccccc = h.z 
+local aaaaaa = h.x - 13
+local bbbbbb = h.y - 2
+local cccccc = h.z
+local k_1 = QuadStructureInput.Text
+local k_2 = CFrame.new(aaaa, bbbb, cccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local k_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(k_1, k_2, k_3)
+local l_1 = QuadStructureInput.Text
+local l_2 = CFrame.new(aaaaa, bbbbb, ccccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local l_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(l_1, l_2, l_3)
+local m_1 = QuadStructureInput.Text
+local m_2 = CFrame.new(aaa, bbb, ccc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local m_3 = 270
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(m_1, m_2, m_3)
+local n_1 = QuadStructureInput.Text
+local n_2 = CFrame.new(aa, bb, cc, 1.19248806e-08, 3.87430191e-06, -1, 4.62005888e-14, 1, -3.87430191e-06, 1, 0, 1.19248806e-08)
+local n_3 = 270
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(n_1, n_2, n_3)
+end)
+
+ShowFps.MouseButton1Click:Connect(function()
+	if FPS.Visible == false then
+		FPS.Visible = true
+		ShowFps.Text = "Show Fps [ON]"
+	else
+		FPS.Visible = false
+		ShowFps.Text = "Show Fps [OFF]"
+	end
+end)
+
+Sit.MouseButton1Click:Connect(function()
+	local lplayer = game:GetService("Players").LocalPlayer
+    lplayer.Character.Humanoid.Sit = true
+end)
+
+local random = false
+local Event = Rep.Events.UseBagItem
+local Player = game.Players.LocalPlayer
+
+AutoHeal.MouseButton1Click:Connect(function()
+	if random == false then
+		AutoHeal.Text = "AutoHeal [ON]"
+		random = true
+		repeat
+			if Player.Character.Humanoid.Health < 100 then
+				Event:FireServer(AutoHealInput.Text)
+				Event:FireServer(AutoHealInput.Text)
+				Event:FireServer(AutoHealInput.Text)
+				Event:FireServer(AutoHealInput.Text)
+				Event:FireServer(AutoHealInput.Text)
+				Event:FireServer(AutoHealInput.Text)
+			end
+			wait(0.1)
+		until random == false
+	else
+		random = false
+		AutoHeal.Text = "AutoHeal [OFF]"
+	end
+end)
+
+-- Farm Functions
+
+
+local blue = false
+local blood = false
+local berry = false
+local apple = false
+
+AutoBlue.MouseButton1Click:Connect(function()
+	if blue == false then
+		blue = true
+		AutoBlue.Text = "Auto Farm Bluefruit [ON]"
+		
+	    repeat
+		
+		      local function plant()
+			     for _, v in pairs(workspace.Deployables:GetChildren()) do
+        if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 100 then
+            game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Bluefruit")
+        end
+        end
+			  end
+			
+			local function collect()
+				 for _, v in pairs(workspace:GetChildren()) do
+        if v.Name == "Bluefruit Bush" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 50 then
+            game.ReplicatedStorage.Events.Pickup:FireServer(v)
+        end
+    end
+			end
+			
+			plant()
+			wait(33)
+			collect()
+			
+		until blue == false
+	else
+		blue = false
+		AutoBlue.Text = "Auto Farm Bluefruit [OFF]"
+	end
+end)
+
+AutoBlood.MouseButton1Click:Connect(function()
+	if blood == false then
+		blood = true
+		AutoBlood.Text = "Auto Farm Bloodfruit [ON]"
+		
+	    repeat
+		
+		      local function plant()
+			     for _, v in pairs(workspace.Deployables:GetChildren()) do
+        if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 100 then
+            game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Bloodfruit")
+        end
+        end
+			  end
+			
+			local function collect()
+				 for _, v in pairs(workspace:GetChildren()) do
+        if v.Name == "Bloodfruit Bush" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 50 then
+            game.ReplicatedStorage.Events.Pickup:FireServer(v)
+        end
+    end
+			end
+			
+			plant()
+			wait(124)
+			collect()
+			
+		until blood == false
+	else
+		blood = false
+		AutoBlood.Text = "Auto Farm Bloodfruit [OFF]"
+	end
+end)
+
+AutoApples.MouseButton1Click:Connect(function()
+	if apple == false then
+		apple = true
+		AutoApples.Text = "Auto Farm Apples [ON]"
+		
+	    repeat
+		
+		      local function plant()
+			     for _, v in pairs(workspace.Deployables:GetChildren()) do
+        if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 100 then
+            game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Apple")
+        end
+        end
+			  end
+			
+			local function collect()
+				 for _, v in pairs(workspace:GetChildren()) do
+        if v.Name == "Apple Tree" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 50 then
+            game.ReplicatedStorage.Events.Pickup:FireServer(v)
+        end
+    end
+			end
+			
+			plant()
+			wait(97)
+			collect()
+			
+		until apple == false
+	else
+		apple = false
+		AutoApples.Text = "Auto Farm Apples [OFF]"
+	end
+end)
+
+AutoBerry.MouseButton1Click:Connect(function()
+	if berry == false then
+		berry = true
+		AutoBerry.Text = "Auto Farm Berries [ON]"
+		
+	    repeat
+		
+		      local function plant()
+			     for _, v in pairs(workspace.Deployables:GetChildren()) do
+        if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 100 then
+            game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Berry")
+        end
+        end
+			  end
+			
+			local function collect()
+				 for _, v in pairs(workspace:GetChildren()) do
+        if v.Name == "Berry Bush" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 50 then
+            game.ReplicatedStorage.Events.Pickup:FireServer(v)
+        end
+    end
+			end
+			
+			plant()
+			wait(64)
+			collect()
+			
+		until berry == false
+	else
+		berry = false
+		AutoBerry.Text = "Auto Farm Berries [OFF]"
+	end
+end)
+
+AutoPenis.MouseButton1Click:Connect(function()
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+local h = game.Players.LocalPlayer.Character.LowerTorso.Position
+local aa = h.x - 7
+local bb = h.y - 2
+local cc = h.z
+
+local aaa = h.x + 7
+local bbb = h.y - 2
+local ccc = h.z
+
+
+local aaaa = h.x
+local bbbb = h.y - 2
+local cccc = h.z - 7
+
+local aaaaa = h.x
+local bbbbb = h.y - 2
+local ccccc = h.z - 14
+
+local aaaaaa = h.x
+local bbbbbb = h.y - 2
+local cccccc = h.z - 21
+
+-- Start
+local k_1 = PenisInput
+local k_2 = CFrame.new(aa, bb, cc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local k_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(k_1, k_2, k_3)
+local l_1 = PenisInput
+local l_2 = CFrame.new(aaa, bbb, ccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local l_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(l_1, l_2, l_3)
+local m_1 = PenisInput
+local m_2 = CFrame.new(aaaa, bbbb, cccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local m_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(m_1, m_2, m_3)
+local n_1 = PenisInput
+local n_2 = CFrame.new(aaaaa, bbbbb, ccccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local n_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(n_1, n_2, n_3)
+local o_1 = PenisInput
+local o_2 = CFrame.new(aaaaaa, bbbbbb, cccccc, -0.99862951, 9.53660761e-12, 0.0523360483, -9.54969524e-12, 1, 2.71050543e-20, -0.0523360483, 4.99793241e-13, -0.99862951)
+local o_3 = 177
+local Event = game:GetService("ReplicatedStorage").Events.PlaceStructure
+Event:FireServer(o_1, o_2, o_3)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I just built a weird structure with the power of my hand!", "All")
+end)
+
+local fps = 0
+local rs = game:GetService'RunService'
+
+function updateFPS()
+	fps = fps + 1
+end
+
+rs.RenderStepped:connect(updateFPS)
+
+while wait(1) do
+	FPS.Text = fps .." FPS"
+	fps = 0
+end
